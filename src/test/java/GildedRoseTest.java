@@ -105,7 +105,7 @@ public class GildedRoseTest {
 
     @Test
     void when_sellIn_greater_than_0_and_quality_less_than_50_increase_quality_by_1() {
-      Item[] items = new Item[]{new Item("Aged Brie", 3, 0)};
+      Item[] items = new Item[]{new Item(GildedRose.AGED_BRIE, 3, 0)};
       GildedRose app = new GildedRose(items);
 
       app.updateQuality();
@@ -126,7 +126,7 @@ public class GildedRoseTest {
 
     @Test
     void when_sellIn_greater_than_0_and_quality_50_increase_quality_by_0() {
-      Item[] items = new Item[]{new Item("Aged Brie", 3, 50)};
+      Item[] items = new Item[]{new Item(GildedRose.AGED_BRIE, 3, 50)};
       GildedRose app = new GildedRose(items);
 
       app.updateQuality();
@@ -147,7 +147,7 @@ public class GildedRoseTest {
 
     @Test
     void when_sellIn_0_or_less_and_quality_less_than_50_increase_quality_by_2() {
-      Item[] items = new Item[]{new Item("Aged Brie", 0, 0)};
+      Item[] items = new Item[]{new Item(GildedRose.AGED_BRIE, 0, 0)};
       GildedRose app = new GildedRose(items);
 
       app.updateQuality();
@@ -168,7 +168,7 @@ public class GildedRoseTest {
 
     @Test
     void when_sellIn_0_or_less_and_quality_50_increase_quality_by_0() {
-      Item[] items = new Item[]{new Item("Aged Brie", 0, 50)};
+      Item[] items = new Item[]{new Item(GildedRose.AGED_BRIE, 0, 50)};
       GildedRose app = new GildedRose(items);
 
       app.updateQuality();
@@ -195,7 +195,7 @@ public class GildedRoseTest {
 
     @Test
     void the_hand_is_eternal_and_unchanging() {
-      Item[] items = new Item[]{new Item("Sulfuras, Hand of Ragnaros", 0, 80)};
+      Item[] items = new Item[]{new Item(GildedRose.SULFURAS, 0, 80)};
       GildedRose app = new GildedRose(items);
 
       app.updateQuality();
@@ -222,7 +222,7 @@ public class GildedRoseTest {
 
     @Test
     void when_sellIn_greater_than_10_and_quality_less_than_50_increase_quality_by_1() {
-      Item[] items = new Item[]{new Item("Backstage passes to a TAFKAL80ETC concert", 13, 0)};
+      Item[] items = new Item[]{new Item(GildedRose.BACKSTAGE_PASSES, 13, 0)};
       GildedRose app = new GildedRose(items);
 
       app.updateQuality();
@@ -243,7 +243,7 @@ public class GildedRoseTest {
 
     @Test
     void when_sellIn_greater_than_10_and_quality_50_increase_quality_by_0() {
-      Item[] items = new Item[]{new Item("Backstage passes to a TAFKAL80ETC concert", 13, 50)};
+      Item[] items = new Item[]{new Item(GildedRose.BACKSTAGE_PASSES, 13, 50)};
       GildedRose app = new GildedRose(items);
 
       app.updateQuality();
@@ -264,7 +264,7 @@ public class GildedRoseTest {
 
     @Test
     void when_sellIn_10_or_less_and_quality_less_than_50_increase_quality_by_2() {
-      Item[] items = new Item[]{new Item("Backstage passes to a TAFKAL80ETC concert", 8, 0)};
+      Item[] items = new Item[]{new Item(GildedRose.BACKSTAGE_PASSES, 8, 0)};
       GildedRose app = new GildedRose(items);
 
       app.updateQuality();
@@ -285,7 +285,7 @@ public class GildedRoseTest {
 
     @Test
     void when_sellIn_10_or_less_and_quality_50_increase_quality_by_0() {
-      Item[] items = new Item[]{new Item("Backstage passes to a TAFKAL80ETC concert", 8, 50)};
+      Item[] items = new Item[]{new Item(GildedRose.BACKSTAGE_PASSES, 8, 50)};
       GildedRose app = new GildedRose(items);
 
       app.updateQuality();
@@ -306,7 +306,7 @@ public class GildedRoseTest {
 
     @Test
     void when_sellIn_5_or_less_and_quality_less_than_50_increase_quality_by_3() {
-      Item[] items = new Item[]{new Item("Backstage passes to a TAFKAL80ETC concert", 3, 0)};
+      Item[] items = new Item[]{new Item(GildedRose.BACKSTAGE_PASSES, 3, 0)};
       GildedRose app = new GildedRose(items);
 
       app.updateQuality();
@@ -327,7 +327,7 @@ public class GildedRoseTest {
 
     @Test
     void when_sellIn_5_or_less_and_quality_50_increase_quality_by_0() {
-      Item[] items = new Item[]{new Item("Backstage passes to a TAFKAL80ETC concert", 3, 50)};
+      Item[] items = new Item[]{new Item(GildedRose.BACKSTAGE_PASSES, 3, 50)};
       GildedRose app = new GildedRose(items);
 
       app.updateQuality();
@@ -348,7 +348,7 @@ public class GildedRoseTest {
 
     @Test
     void when_sellIn_0_and_quality_less_than_50_increase_quality_to_0() {
-      Item[] items = new Item[]{new Item("Backstage passes to a TAFKAL80ETC concert", 0, 10)};
+      Item[] items = new Item[]{new Item(GildedRose.BACKSTAGE_PASSES, 0, 10)};
       GildedRose app = new GildedRose(items);
 
       app.updateQuality();
@@ -359,7 +359,7 @@ public class GildedRoseTest {
 
     @Test
     void when_sellIn_0_and_quality_50_increase_quality_to_0() {
-      Item[] items = new Item[]{new Item("Backstage passes to a TAFKAL80ETC concert", 0, 50)};
+      Item[] items = new Item[]{new Item(GildedRose.BACKSTAGE_PASSES, 0, 50)};
       GildedRose app = new GildedRose(items);
 
       app.updateQuality();
